@@ -1,0 +1,31 @@
+{
+  "name": "graphQl-learning",
+  "version": "1.0.0",
+  "description": "This project is concerned to learn GraphQL and Apollo-GraphQL",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "devStart": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shashidev091/graphQl-learning.git"
+  },
+  "keywords": [],
+  "author": "Shashi Bhagat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shashidev091/graphQl-learning/issues"
+  },
+  "homepage": "https://github.com/shashidev091/graphQl-learning#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-graphql": "^0.12.0",
+    "graphql": "^15.5.0",
+    "nanoid": "^3.1.23"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
