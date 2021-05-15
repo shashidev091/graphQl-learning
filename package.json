@@ -5,14 +5,17 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "devStart": "nodemon server.js",
+    "devStart": "nodemon server.js --exec babel-node -e js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/shashidev091/graphQl-learning.git"
   },
-  "keywords": [],
+  "keywords": [
+    "babel",
+    "es6"
+  ],
   "author": "Shashi Bhagat",
   "license": "ISC",
   "bugs": {
@@ -26,6 +29,10 @@
     "nanoid": "^3.1.23"
   },
   "devDependencies": {
+    "@babel/cli": "^7.13.16",
+    "@babel/core": "^7.14.2",
+    "@babel/node": "^7.14.2",
+    "@babel/preset-env": "^7.14.2",
     "nodemon": "^2.0.7"
   }
 }
