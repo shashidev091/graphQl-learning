@@ -13,6 +13,7 @@ const schema = buildSchema(`
         stack: Stack
         teachAssists: [TeachAssist] 
     }
+    
     type TeachAssist {
         firstName: String
         lastName: String
