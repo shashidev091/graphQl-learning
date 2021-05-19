@@ -4,7 +4,7 @@
   "description": "This project is concerned to learn GraphQL and Apollo-GraphQL",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "babel-node --presets @babel/preset-env servers/server.js",
     "devStart": "nodemon servers/server.js --exec babel-node -e js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -28,13 +28,13 @@
     "express-graphql": "^0.12.0",
     "graphql": "^15.5.0",
     "mongoose": "^5.12.9",
-    "nanoid": "^3.1.23"
-  },
-  "devDependencies": {
+    "nanoid": "^3.1.23",
     "@babel/core": "^7.14.2",
     "@babel/node": "^7.14.2",
     "@babel/preset-env": "^7.14.2",
-    "dotenv": "^9.0.2",
+    "dotenv": "^9.0.2"
+  },
+  "devDependencies": {
     "nodemon": "^2.0.7"
   }
 }
